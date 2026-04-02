@@ -16,6 +16,7 @@ Este documento registra decisoes praticas e regras operacionais importantes para
 
 ## Arquivos principais
 
+- `LICENSE`
 - `manifest.json`
 - `background.js`
 - `content.js`
@@ -46,3 +47,8 @@ O que nao fazer:
 ## Observacao importante
 
 Neste projeto ja ocorreu uma falha operacional por ignorar a memoria global de prints no primeiro momento. Este arquivo existe justamente para reduzir a chance de repeticao.
+
+## Licenca
+
+- Este projeto usa licenca `MIT`.
+- Regra global registrada em `C:\Users\jairs\.codex\memories\github_license_policy.md`: projetos publicados no GitHub devem ter licenca explicita.

@@ -38,6 +38,7 @@ O que ela faz:
 
 ## Estrutura
 
+- `LICENSE`: licenca MIT do projeto
 - `manifest.json`: declaracao da extensao
 - `background.js`: acao do icone e atalho
 - `content.js`: injecao do botao e montagem do leitor

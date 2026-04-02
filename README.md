@@ -30,6 +30,10 @@ O que ela faz:
 - Ou use `Alt+Shift+R`.
 - `Esc` fecha o modo de leitura.
 
+## Politica de privacidade publica
+
+- `https://github.com/jairslima/leitor-de-artigos/blob/master/PRIVACY.md`
+
 ## Autoabertura configurada
 
 - `dropsdocotidiano.com`: abre automaticamente em URLs de artigo no formato `/{ano}/{mes}/{dia}/...`

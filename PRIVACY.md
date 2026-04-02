@@ -2,6 +2,10 @@
 
 `Leitor de Artigos` nao coleta, nao armazena e nao transmite dados pessoais para servidores externos.
 
+URL publica recomendada para uso nas lojas:
+
+- `https://github.com/jairslima/leitor-de-artigos/blob/master/PRIVACY.md`
+
 ## O que a extensao faz
 
 A extensao atua localmente no navegador para:

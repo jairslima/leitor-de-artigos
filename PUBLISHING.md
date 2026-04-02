@@ -27,6 +27,10 @@ Este documento registra o que falta e como preparar a extensao `Leitor de Artigo
 6. Preparar politica de privacidade, mesmo que a extensao nao envie dados.
 7. Publicar `PRIVACY.md` em uma URL publica antes de preencher a loja.
 
+URL publica atual da politica deste projeto:
+
+- `https://github.com/jairslima/leitor-de-artigos/blob/master/PRIVACY.md`
+
 ## Pontos de revisao tecnica
 
 - A extensao nao envia dados para servidor.

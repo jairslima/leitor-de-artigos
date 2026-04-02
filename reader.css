@@ -1,0 +1,232 @@
+:root {
+  --laf-scale: 0;
+}
+
+html[data-laf-reader-scale="-2"] {
+  --laf-scale: -2;
+}
+
+html[data-laf-reader-scale="-1"] {
+  --laf-scale: -1;
+}
+
+html[data-laf-reader-scale="1"] {
+  --laf-scale: 1;
+}
+
+html[data-laf-reader-scale="2"] {
+  --laf-scale: 2;
+}
+
+html[data-laf-reader-scale="3"] {
+  --laf-scale: 3;
+}
+
+html[data-laf-reader-scale="4"] {
+  --laf-scale: 4;
+}
+
+html[data-laf-reader-scale="5"] {
+  --laf-scale: 5;
+}
+
+#laf-reader-toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2147483646;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  color: #f8fafc;
+  font: 600 14px/1.2 "Segoe UI", sans-serif;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.35);
+  cursor: pointer;
+}
+
+#laf-reader-toggle:hover {
+  filter: brightness(1.08);
+}
+
+#laf-reader-picker {
+  position: fixed;
+  right: 20px;
+  bottom: 70px;
+  z-index: 2147483646;
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 14px;
+  background: rgba(15, 23, 42, 0.92);
+  color: #f8fafc;
+  font: 600 13px/1.2 "Segoe UI", sans-serif;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.28);
+  cursor: pointer;
+}
+
+#laf-reader-picker:hover {
+  filter: brightness(1.08);
+}
+
+[data-laf-reader-pick="hover"] {
+  outline: 3px solid #2563eb !important;
+  outline-offset: 2px !important;
+  cursor: crosshair !important;
+}
+
+html.laf-picker-open,
+html.laf-picker-open * {
+  cursor: crosshair !important;
+}
+
+#laf-reader-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  display: none;
+  background:
+    radial-gradient(circle at top, rgba(37, 99, 235, 0.18), transparent 30%),
+    rgba(248, 250, 252, 0.97);
+  color: #0f172a;
+  overflow-y: auto;
+  backdrop-filter: blur(8px);
+}
+
+#laf-reader-overlay[aria-hidden="false"] {
+  display: block;
+}
+
+.laf-reader-shell {
+  width: min(900px, calc(100vw - 32px));
+  margin: 32px auto;
+  padding: 24px 0 80px;
+}
+
+.laf-reader-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.laf-reader-badge {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(29, 78, 216, 0.1);
+  color: #1d4ed8;
+  font: 700 12px/1 "Segoe UI", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#laf-reader-title {
+  margin: 0 0 10px;
+  font: 800 clamp(32px, 4vw, 52px)/1.02 Georgia, "Times New Roman", serif;
+  max-width: 14ch;
+}
+
+#laf-reader-meta {
+  margin: 0;
+  color: #475569;
+  font: 500 14px/1.5 "Segoe UI", sans-serif;
+}
+
+.laf-reader-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.laf-reader-action {
+  border: 1px solid rgba(15, 23, 42, 0.14);
+  border-radius: 999px;
+  background: #ffffff;
+  color: #0f172a;
+  padding: 10px 14px;
+  font: 600 14px/1 "Segoe UI", sans-serif;
+  cursor: pointer;
+}
+
+.laf-reader-article {
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 24px;
+  padding: clamp(24px, 4vw, 48px);
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.08);
+  font: 400 calc(20px + (var(--laf-scale) * 2px))/1.8 Georgia, "Times New Roman", serif;
+}
+
+.laf-reader-article > *:first-child {
+  margin-top: 0;
+}
+
+.laf-reader-article h1,
+.laf-reader-article h2,
+.laf-reader-article h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.15;
+  margin: 1.6em 0 0.5em;
+}
+
+.laf-reader-article p,
+.laf-reader-article li,
+.laf-reader-article blockquote {
+  margin: 0 0 1em;
+}
+
+.laf-reader-article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 28px auto;
+  border-radius: 18px;
+}
+
+.laf-reader-article a {
+  color: #1d4ed8;
+}
+
+.laf-reader-article blockquote {
+  padding: 16px 20px;
+  border-left: 4px solid #93c5fd;
+  background: rgba(219, 234, 254, 0.4);
+}
+
+@media (max-width: 720px) {
+  #laf-reader-toggle {
+    right: 14px;
+    bottom: 14px;
+    padding: 11px 14px;
+    font-size: 13px;
+  }
+
+  #laf-reader-picker {
+    right: 14px;
+    bottom: 60px;
+    font-size: 12px;
+  }
+
+  .laf-reader-shell {
+    width: min(100vw - 16px, 900px);
+    margin: 12px auto;
+  }
+
+  .laf-reader-header {
+    flex-direction: column;
+  }
+
+  .laf-reader-actions {
+    justify-content: flex-start;
+  }
+
+  .laf-reader-article {
+    border-radius: 18px;
+    font-size: calc(18px + (var(--laf-scale) * 2px));
+  }
+}
